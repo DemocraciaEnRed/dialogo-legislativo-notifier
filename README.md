@@ -10,7 +10,7 @@ Para saber mas del conjunto de modulos que compone Diálogo Legislativo, hace [c
 
 ---
 
-### Setup dialogoLegislativo-notifier
+### Setup dialogo-legislativo-notifier
 
 > #### ⚠️ NOTAS IMPORTANTES
 > 
@@ -26,8 +26,8 @@ Para saber mas del conjunto de modulos que compone Diálogo Legislativo, hace [c
 Ir a la carpeta del repo y instalar las dependencias.
 
 ```
-dev/:$ cd dialogoLegislativo-notifier
-dev/dialogoLegislativo-notifier:$ npm install
+dev/:$ cd dialogo-legislativo-notifier
+dev/dialogo-legislativo-notifier:$ npm install
 ```
 
 Ahora tenemos que crear un archivo `.env` que son nuestras variables de entorno
@@ -51,7 +51,7 @@ BULK_EMAIL_CHUNK_SIZE=100-or-change-it
 Comando para ejecutar:
 
 ```
-dev/dialogoLegislativo-notifier:$ npm run dev
+dev/dialogo-legislativo-notifier:$ npm run dev
 ```
 
 #### ℹ Simple test
