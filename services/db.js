@@ -2,10 +2,10 @@ const MongoClient = require('mongodb').MongoClient;
 
 let _db;
 
-const connectDB = async (uri, col, callback) => {
+const connectDB = async (uri, callback) => {
      try {
          MongoClient.connect(uri, { useNewUrlParser: true }, (err, client) => {
-             _db = client.db(col)
+             _db = client.db()
              return callback(err)
          })
      } catch (e) {
