@@ -2,6 +2,7 @@ const React = require('react')
 const ReactDom = require('react-dom/server')
 const { Email, Item, Span, A, renderEmail, Box, Image } = require('react-html-email')
 const Styles = require('./styles')
+const { ORGANIZATION_URL } = process.env
 
 const MailFooter = (props) => {
   return (
