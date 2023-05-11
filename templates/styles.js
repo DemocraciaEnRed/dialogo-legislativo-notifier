@@ -5,7 +5,7 @@ module.exports.headerStyle = {
 }
 
 module.exports.footerStyle = {
-  backgroundColor: '#5c98bd',
+  backgroundColor: '#1A1A1A',
   padding: '35px 80px 50px',
   color: '#fff'
 }

@@ -8,9 +8,9 @@ const MailFooter = (props) => {
     <Item style={Styles.footerStyle}>
       <Box align='center'>
         <Item align='center'>
-          <Image src='https://www.hcdn.gob.ar/system/modules/ar.gob.hcdn.frontend/resources/img/logo-hcdn-blanco.png' align='center' />
+          <Image src={`${ORGANIZATION_URL}/static/assets/logo_fondo_negro.png`} align='center' />
         </Item>
-        <Item align='center'>
+        <Item>
           <Span {...Styles.textStyle}>
             <b>Honorable Cámara de Diputados de la Nación Argentina</b> | Congreso de la Nación Argentina | Av. Rivadavia 1864 - Ciudad Autónoma de Bs. As. (C.P.C1033AAV) | (+5411) 6075-7100
           </Span>
