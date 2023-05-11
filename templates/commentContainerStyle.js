@@ -41,7 +41,7 @@ module.exports.userAvatarStyle = {
 }
 
 module.exports.userNameStyle = {
-  color: '#404b68',
+  color: '#8665E0',
   fontSize: 14,
   fontWeight: 'bold',
   display: 'block',

@@ -6,7 +6,7 @@ const Styles = require('./styles')
 const MailHeader = (props) => {
   return (
     <Item align='center' style={Styles.headerStyle}>
-      <Image src='https://www.hcdn.gob.ar/system/modules/ar.gob.hcdn.frontend/resources/img/logo-hcdn-vertical.jpg' align='center' style={{ width: 130, height: 98, margin: 25 }} />
+      <Image src={`${ORGANIZATION_URL}/static/assets/logo.png`} align='center' style={{ width: 250, height: 98, margin: 25 }} />
     </Item>
   )
 }
