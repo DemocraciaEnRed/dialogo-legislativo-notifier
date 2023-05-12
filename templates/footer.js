@@ -13,7 +13,11 @@ const MailFooter = (props) => {
         </Item>
         <Item>
           <Span {...Styles.textStyle}>
-            <b>Honorable Cámara de Diputados de la Nación Argentina</b> | Congreso de la Nación Argentina | Av. Rivadavia 1864 - Ciudad Autónoma de Bs. As. (C.P.C1033AAV) | (+5411) 6075-7100
+          <ul>
+            <li>Dirección General de Modernización, Fortalecimiento Institucional y Sustentabilidad</li>
+            <li>dg.modernizacion@legislatura.gob.ar</li>
+            <li>(011) 4338-3000 Int. 1135</li>
+          </ul>
           </Span>
         </Item>
       </Box>
