@@ -14,9 +14,10 @@ const MailFooter = (props) => {
         <Item>
           <Span {...Styles.textStyle}>
           <ul>
+            <li>Legislatura de la Ciudad de Buenos Aires</li>
+            <li>Perú 160, C1067AAD (CABA) / TEL: (011) 4338-3000</li>
             <li>Dirección General de Modernización, Fortalecimiento Institucional y Sustentabilidad</li>
             <li>dg.modernizacion@legislatura.gob.ar</li>
-            <li>(011) 4338-3000 Int. 1135</li>
           </ul>
           </Span>
         </Item>
