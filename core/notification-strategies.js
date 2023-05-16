@@ -1,4 +1,5 @@
 const agenda = require('../api/jobs/agenda')
+require('babel-register');
 const { NODE_ENV } = process.env
 
 const basePath = NODE_ENV === 'production' ? '../dist/templates' : '../templates'

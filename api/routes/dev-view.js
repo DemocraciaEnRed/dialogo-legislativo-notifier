@@ -18,13 +18,6 @@ const basePath = NODE_ENV === 'production' ? '../../dist/templates' : '../../tem
 //   return a
 // }
 
-function buildTemplate (fileName, props) {
-  const path = `${basePath}/${fileName}`
-  const reactTemplate = require(path)
-
-  return reactTemplate({ ...props })
-}
-
 router.post('/test', async (req, res, next) => {
   try {
     const { type, comment } = req.body
