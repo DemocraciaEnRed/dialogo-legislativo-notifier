@@ -67,6 +67,30 @@ exports.post = async (req, res) => {
       .toArray()
     log(`Document has ${tagsData.length} tags: "${tagsData.map(t=>t.name).join('", "')}"`)
 
+
+    // Notificamos a la cuenta de administrador del sistema
+    try {
+
+      notification.sendEmail('document-published', {
+        user: {
+          email: 'dg.evidencias@legislatura.gob.ar',
+          name: "Admin"
+        },
+        document: {
+          id: documentObj._id,
+          title: currentVersionObj.content.title,
+          author: documentObj.authorObj.fullname || documentObj.authorObj.username
+        },
+        matchingTags: []
+      })
+
+    } catch (err) {
+
+      log(`Error when sending mail to admin:`)
+      log(err)
+
+    }
+
     // Buscamos todxs lxs usuarixs suscriptos a 1 o más de las etiquetas
     const users = await db.collection('users')
       .find({$and: [
@@ -123,6 +147,7 @@ exports.post = async (req, res) => {
     })
 
     // Devolvemos OK
+    const result = await db.collection('documents').updateOne({ _id: ObjectID(documentId) }, { $set: { publishedMailSent: true } })
     log(`${emailsSent} email(s) scheduled`)
     res.status(OK).json({
       message: `${emailsSent} email(s) scheduled`
